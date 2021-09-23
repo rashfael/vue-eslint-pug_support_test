@@ -1,18 +1,39 @@
 module.exports = {
-  root: true,
+
+  parser: "@typescript-eslint/parser",
+
+  parserOptions: {
+    sourceType: "module",
+    project: "tsconfig.json"
+  },
+
   env: {
     node: true
   },
-  'extends': [
-    'plugin:vue/vue3-essential',
-    'eslint:recommended',
-    '@vue/typescript/recommended'
+
+  plugins: [
+    "@typescript-eslint",
+    "vue"
   ],
-  parserOptions: {
-    ecmaVersion: 2020
-  },
-  rules: {
-    'no-console': process.env.NODE_ENV === 'production' ? 'warn' : 'off',
-    'no-debugger': process.env.NODE_ENV === 'production' ? 'warn' : 'off'
-  }
+
+  rules: {},
+
+  overrides: [
+    {
+      files: [
+        "*.vue",
+        "*.vue.ts"
+      ],
+      parser: "vue-eslint-parser",
+      parserOptions: {
+        parser: "@typescript-eslint/parser",
+        project: "tsconfig.json",
+        extraFileExtensions: [ ".vue" ],
+        tsconfigRootDir: "./"
+      },
+      "rules": {
+        "vue/no-duplicate-attributes": "error"
+      }
+    }
+  ]
 }
