@@ -36,6 +36,37 @@
   //- vue/use-v-on-exact
   button(v-on:click="foo")
 
+  //- vue/valid-template-root
+  template(src='foo.html'): div
+
+  //- vue/valid-v-bind
+  div(v-bind)
+  div(:aaa)
+  div(v-bind:aaa.bbb)
+
+  //- vue/valid-v-cloak
+  div(v-cloak:aaa)
+  div(v-cloak.bbb)
+  div(v-cloak="ccc")
+
+  //- vue/valid-v-else-if
+  div
+  div(v-else-if="booleanField1")
+
+  div(v-if="booleanField1")
+  div(v-else-if)
+
+  div(v-if="booleanField1")
+  div(v-else-if:aaa="booleanField1")
+  div(v-if="booleanField1")
+  div(v-else-if.bbb="booleanField1")
+
+  //- vue/valid-v-else
+  div(v-else)
+  div(v-if="x")div(v-else="foo")
+  div(v-if="x")div(v-else:aaa)
+  div(v-if="x")(div v-else.bbb)
+
   //-
     Also it must be:
       vue/no-unused-components
