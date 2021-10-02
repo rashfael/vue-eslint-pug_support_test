@@ -295,10 +295,10 @@
     anymatch "^3.0.0"
     source-map "^0.6.0"
 
-"@typescript-eslint/eslint-plugin@^4.18.0":
+"@typescript-eslint/eslint-plugin@4.31.2":
   version "4.31.2"
-  resolved "https://registry.nlark.com/@typescript-eslint/eslint-plugin/download/@typescript-eslint/eslint-plugin-4.31.2.tgz?cache=0&sync_timestamp=1632294119334&other_urls=https%3A%2F%2Fregistry.nlark.com%2F%40typescript-eslint%2Feslint-plugin%2Fdownload%2F%40typescript-eslint%2Feslint-plugin-4.31.2.tgz"
-  integrity sha1-n0HvruMs2res6UsVvRm3Vt0Jmwo=
+  resolved "https://registry.yarnpkg.com/@typescript-eslint/eslint-plugin/-/eslint-plugin-4.31.2.tgz#9f41efaee32cdab7ace94b15bd19b756dd099b0a"
+  integrity sha512-w63SCQ4bIwWN/+3FxzpnWrDjQRXVEGiTt9tJTRptRXeFvdZc/wLiz3FQUwNQ2CVoRGI6KUWMNUj/pk63noUfcA==
   dependencies:
     "@typescript-eslint/experimental-utils" "4.31.2"
     "@typescript-eslint/scope-manager" "4.31.2"
@@ -320,10 +320,10 @@
     eslint-scope "^5.1.1"
     eslint-utils "^3.0.0"
 
-"@typescript-eslint/parser@^4.18.0":
+"@typescript-eslint/parser@4.31.2":
   version "4.31.2"
-  resolved "https://registry.nlark.com/@typescript-eslint/parser/download/@typescript-eslint/parser-4.31.2.tgz?cache=0&sync_timestamp=1632294173327&other_urls=https%3A%2F%2Fregistry.nlark.com%2F%40typescript-eslint%2Fparser%2Fdownload%2F%40typescript-eslint%2Fparser-4.31.2.tgz"
-  integrity sha1-VKp1mG4zAtke/yu7qm7PqAhOnDQ=
+  resolved "https://registry.yarnpkg.com/@typescript-eslint/parser/-/parser-4.31.2.tgz#54aa75986e3302d91eff2bbbaa6ecfa8084e9c34"
+  integrity sha512-EcdO0E7M/sv23S/rLvenHkb58l3XhuSZzKf6DBvLgHqOYdL6YFMYVtreGFWirxaU2mS1GYDby3Lyxco7X5+Vjw==
   dependencies:
     "@typescript-eslint/scope-manager" "4.31.2"
     "@typescript-eslint/types" "4.31.2"
@@ -376,10 +376,10 @@
   dependencies:
     "@vue/cli-shared-utils" "^4.5.13"
 
-"@vue/cli-plugin-typescript@~4.5.0":
+"@vue/cli-plugin-typescript@4.5.13":
   version "4.5.13"
-  resolved "https://registry.nlark.com/@vue/cli-plugin-typescript/download/@vue/cli-plugin-typescript-4.5.13.tgz"
-  integrity sha1-9RT2YeFvkJaompym5potdixthGQ=
+  resolved "https://registry.yarnpkg.com/@vue/cli-plugin-typescript/-/cli-plugin-typescript-4.5.13.tgz#f514f661e16f9096a89a9ca6e69a2d762c6d8464"
+  integrity sha512-CpLlIdFNV1gn9uC4Yh6QgWI42uk2x5Z3cb2ScxNSwWsR1vgSdr0/1DdNzoBm68aP8RUtnHHO/HZfPnvXiq42xA==
   dependencies:
     "@types/webpack-env" "^1.15.2"
     "@vue/cli-shared-utils" "^4.5.13"
@@ -399,10 +399,10 @@
   resolved "https://registry.nlark.com/@vue/cli-plugin-vuex/download/@vue/cli-plugin-vuex-4.5.13.tgz?cache=0&sync_timestamp=1631754007879&other_urls=https%3A%2F%2Fregistry.nlark.com%2F%40vue%2Fcli-plugin-vuex%2Fdownload%2F%40vue%2Fcli-plugin-vuex-4.5.13.tgz"
   integrity sha1-mGRti8HmnPbGpsui/tPqzgNWw2A=
 
-"@vue/cli-service@~4.5.0":
+"@vue/cli-service@4.5.13":
   version "4.5.13"
-  resolved "https://registry.nlark.com/@vue/cli-service/download/@vue/cli-service-4.5.13.tgz"
-  integrity sha1-oJ5oSoAWhLbiTlQUrTBlCXDuye0=
+  resolved "https://registry.yarnpkg.com/@vue/cli-service/-/cli-service-4.5.13.tgz#a09e684a801684b6e24e5414ad30650970eec9ed"
+  integrity sha512-CKAZN4iokMMsaUyJRU22oUAz3oS/X9sVBSKAF2/shFBV5xh3jqAlKl8OXZYz4cXGFLA6djNuYrniuLAo7Ku97A==
   dependencies:
     "@intervolga/optimize-cssnano-plugin" "^1.0.5"
     "@soda/friendly-errors-webpack-plugin" "^1.7.1"
@@ -498,7 +498,7 @@
     "@vue/compiler-core" "3.2.13"
     "@vue/shared" "3.2.13"
 
-"@vue/compiler-sfc@3.2.13", "@vue/compiler-sfc@^3.0.0":
+"@vue/compiler-sfc@3.2.13":
   version "3.2.13"
   resolved "https://registry.nlark.com/@vue/compiler-sfc/download/@vue/compiler-sfc-3.2.13.tgz"
   integrity sha1-o4R1BIqtnJbPBN/mNRKbQX4PkpU=
@@ -2633,10 +2633,18 @@ escape-string-regexp@^1.0.2, escape-string-regexp@^1.0.5:
   resolved "https://registry.npm.taobao.org/escape-string-regexp/download/escape-string-regexp-1.0.5.tgz?cache=0&sync_timestamp=1618677243201&other_urls=https%3A%2F%2Fregistry.npm.taobao.org%2Fescape-string-regexp%2Fdownload%2Fescape-string-regexp-1.0.5.tgz"
   integrity sha1-G2HAViGQqN/2rjuyzwIAyhMLhtQ=
 
-eslint-plugin-vue@^7.0.0:
+eslint-plugin-vue-pug-sfc@1.0.0-alpha.10:
+  version "1.0.0-alpha.10"
+  resolved "https://registry.yarnpkg.com/eslint-plugin-vue-pug-sfc/-/eslint-plugin-vue-pug-sfc-1.0.0-alpha.10.tgz#21dce8d0d33ab44e31f942b66486a39c0f30bb01"
+  integrity sha512-MtUCjgSgPgWhhWekWkia9UlfbhbH4JDLw6uBScEBptsgniWW5lgQxSvCgWhhc0ZkvQnYe6+n8ackdD4J1t2R6w==
+  dependencies:
+    pug-lexer "^5.0.1"
+    vue-eslint-parser "~7.11.0"
+
+eslint-plugin-vue@7.18.0:
   version "7.18.0"
-  resolved "https://registry.nlark.com/eslint-plugin-vue/download/eslint-plugin-vue-7.18.0.tgz?cache=0&sync_timestamp=1631875208118&other_urls=https%3A%2F%2Fregistry.nlark.com%2Feslint-plugin-vue%2Fdownload%2Feslint-plugin-vue-7.18.0.tgz"
-  integrity sha1-AqRSFCMwx/J8JC2yGhueJSOFQPY=
+  resolved "https://registry.yarnpkg.com/eslint-plugin-vue/-/eslint-plugin-vue-7.18.0.tgz#02a452142330c7f27c242db21a1b9e25238540f6"
+  integrity sha512-ceDXlXYMMPMSXw7tdKUR42w9jlzthJGJ3Kvm3YrZ0zuQfvAySNxe8sm6VHuksBW0+060GzYXhHJG6IHVOfF83Q==
   dependencies:
     eslint-utils "^2.1.0"
     natural-compare "^1.4.0"
@@ -2690,10 +2698,10 @@ eslint-visitor-keys@^2.0.0:
   resolved "https://registry.nlark.com/eslint-visitor-keys/download/eslint-visitor-keys-2.1.0.tgz?cache=0&sync_timestamp=1624559014210&other_urls=https%3A%2F%2Fregistry.nlark.com%2Feslint-visitor-keys%2Fdownload%2Feslint-visitor-keys-2.1.0.tgz"
   integrity sha1-9lMoJZMFknOSyTjtROsKXJsr0wM=
 
-eslint@^6.7.2:
+eslint@6.8.0:
   version "6.8.0"
-  resolved "https://registry.nlark.com/eslint/download/eslint-6.8.0.tgz"
-  integrity sha1-YiYtZylzn5J1cjgkMC+yJ8jJP/s=
+  resolved "https://registry.yarnpkg.com/eslint/-/eslint-6.8.0.tgz#62262d6729739f9275723824302fb227c8c93ffb"
+  integrity sha512-K+Iayyo2LtyYhDSYwz5D5QdWw0hCacNzyq1Y821Xna2xSJj7cijoLLYmLxTQgcgZ9mC61nryMy9S7GRbYpI5Ig==
   dependencies:
     "@babel/code-frame" "^7.0.0"
     ajv "^6.10.0"
@@ -7381,10 +7389,10 @@ typedarray@^0.0.6:
   resolved "https://registry.npm.taobao.org/typedarray/download/typedarray-0.0.6.tgz"
   integrity sha1-hnrHTjhkGHsdPUfZlqeOxciDB3c=
 
-typescript@~4.1.5:
+typescript@4.1.6:
   version "4.1.6"
-  resolved "https://registry.nlark.com/typescript/download/typescript-4.1.6.tgz?cache=0&sync_timestamp=1632295509547&other_urls=https%3A%2F%2Fregistry.nlark.com%2Ftypescript%2Fdownload%2Ftypescript-4.1.6.tgz"
-  integrity sha1-G+zYXXdWfDx0EXIznpPOLmmTITg=
+  resolved "https://registry.yarnpkg.com/typescript/-/typescript-4.1.6.tgz#1becd85d77567c3c741172339e93ce2e69932138"
+  integrity sha512-pxnwLxeb/Z5SP80JDRzVjh58KsM6jZHRAOtTpS7sXLS4ogXNKC9ANxHHZqLLeVHZN35jCtI4JdmLLbLiC1kBow==
 
 uglify-js@3.4.x:
   version "3.4.10"
@@ -7617,7 +7625,7 @@ vue-class-component@^8.0.0-0:
   resolved "https://registry.nlark.com/vue-class-component/download/vue-class-component-8.0.0-rc.1.tgz"
   integrity sha1-22ks2XZW65oIIGwD0Lc5jNsdlCA=
 
-vue-eslint-parser@^7.10.0:
+vue-eslint-parser@^7.10.0, vue-eslint-parser@~7.11.0:
   version "7.11.0"
   resolved "https://registry.nlark.com/vue-eslint-parser/download/vue-eslint-parser-7.11.0.tgz?cache=0&sync_timestamp=1630883407552&other_urls=https%3A%2F%2Fregistry.nlark.com%2Fvue-eslint-parser%2Fdownload%2Fvue-eslint-parser-7.11.0.tgz"
   integrity sha1-IUtd6pYQB/z/su5luJEjB2KNDa8=
