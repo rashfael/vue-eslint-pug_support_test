@@ -1,6 +1,6 @@
 <template lang="pug">
 
-  //- vue/no-duplicate-attributes
+  //- [ DONE ] vue/no-duplicate-attributes
   div(title="test1" title="test2")
 
   //- vue/no-dupe-v-else-if
@@ -21,6 +21,7 @@
   div(
     v-if="booleanField1"
     v-for="i in 5"
+    :key="i"
   )
     li item
 
@@ -28,7 +29,7 @@
   component
   component(is="type")
 
-  //- vue/require-v-for-key
+  //- [ DONE ] vue/require-v-for-key
   div(
     v-for="i in 5"
   ) {{ i }}
