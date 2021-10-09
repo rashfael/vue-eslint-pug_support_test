@@ -14,6 +14,8 @@ module.exports = {
   extends: [
     "plugin:vue/recommended",
     "plugin:vue-pug-sfc/recommended",
+    "plugin:vue/vue3-essential",
+    "plugin:vue/vue3-strongly-recommended"
   ],
 
   plugins: [

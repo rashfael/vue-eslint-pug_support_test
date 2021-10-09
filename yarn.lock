@@ -2633,10 +2633,10 @@ escape-string-regexp@^1.0.2, escape-string-regexp@^1.0.5:
   resolved "https://registry.npm.taobao.org/escape-string-regexp/download/escape-string-regexp-1.0.5.tgz?cache=0&sync_timestamp=1618677243201&other_urls=https%3A%2F%2Fregistry.npm.taobao.org%2Fescape-string-regexp%2Fdownload%2Fescape-string-regexp-1.0.5.tgz"
   integrity sha1-G2HAViGQqN/2rjuyzwIAyhMLhtQ=
 
-eslint-plugin-vue-pug-sfc@1.0.0-alpha.10:
-  version "1.0.0-alpha.10"
-  resolved "https://registry.yarnpkg.com/eslint-plugin-vue-pug-sfc/-/eslint-plugin-vue-pug-sfc-1.0.0-alpha.10.tgz#21dce8d0d33ab44e31f942b66486a39c0f30bb01"
-  integrity sha512-MtUCjgSgPgWhhWekWkia9UlfbhbH4JDLw6uBScEBptsgniWW5lgQxSvCgWhhc0ZkvQnYe6+n8ackdD4J1t2R6w==
+eslint-plugin-vue-pug-sfc@1.0.0-alpha.14:
+  version "1.0.0-alpha.14"
+  resolved "https://registry.yarnpkg.com/eslint-plugin-vue-pug-sfc/-/eslint-plugin-vue-pug-sfc-1.0.0-alpha.14.tgz#38b401df4c22782e0a4ee327aea5c4a2684df283"
+  integrity sha512-5NVIpKIps8GZ4un7C8eyRIHbdGOnSX8roDc0pR+6zLl6VNMaitJjBSc5+6lsV5FOPtvYxPBLREUJ7gTCMYf8Zg==
   dependencies:
     pug-lexer "^5.0.1"
     vue-eslint-parser "~7.11.0"

@@ -1,23 +1,37 @@
 <template lang="pug">
 
+  //- vue/no-deprecated-dollar-listeners-api
+  div(v-on="$listeners")
+
+  //- vue/no-deprecated-dollar-scopedslots-api
+  div(v-if="$scopedSlots.default")
+    slot
+
   //- [ DONE ] vue/no-duplicate-attributes
   div(title="test1" title="test2")
 
-  //- vue/no-dupe-v-else-if
+  //- vue/no-deprecated-filter
+  div(v-bind:id="filter(msg)")
+
+  //- vue/comment-directive
+  //- eslint-disable-next-line vue/no-duplicate-attributes
+  div(title="test1" title="test2")
+
+  //- [ DONE ] vue/no-dupe-v-else-if
   div(v-if="booleanField1") FOO
   div(v-else-if="booleanField1") BAR
 
   //- vue/no-parsing-error
   | {{ . }}
 
-  //- vue/no-template-key
+  //- [ DONE ] vue/no-template-key
   template(key="foo")
 
-  //- vue/no-textarea-mustache
+  //- [ DONE ] vue/no-textarea-mustache
   textarea {{ message }}
 
   //- vue/no-unused-vars
-  //- vue/no-use-v-if-with-v-for
+  //- [ DONE ] vue/no-use-v-if-with-v-for
   div(
     v-if="booleanField1"
     v-for="i in 5"
@@ -25,7 +39,7 @@
   )
     li item
 
-  //- vue/require-component-is
+  //- [ DONE ] vue/require-component-is
   component
   component(is="type")
 
