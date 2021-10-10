@@ -12,10 +12,10 @@ module.exports = {
   },
 
   extends: [
-    "plugin:vue/recommended",
-    "plugin:vue-pug-sfc/recommended",
+    "plugin:vue/base",
     "plugin:vue/vue3-essential",
-    "plugin:vue/vue3-strongly-recommended"
+    "plugin:vue/vue3-strongly-recommended",
+    "plugin:vue/vue3-recommended"
   ],
 
   plugins: [
@@ -36,9 +36,6 @@ module.exports = {
         project: "tsconfig.json",
         extraFileExtensions: [ ".vue" ],
         tsconfigRootDir: "./"
-      },
-      "rules": {
-        // They are already coming from `extends`
       }
     }
   ]
