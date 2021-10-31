@@ -38,7 +38,7 @@
     ) {{ i }}
 
     //- vue/use-v-on-exact
-    button(v-on:click="foo")
+    button(v-on:click="foo" v-on:click.ctrl="foo")
 
     //- vue/valid-template-root
     template(src='foo.html'): div
