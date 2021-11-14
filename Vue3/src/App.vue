@@ -123,6 +123,135 @@
   //- vue/use-v-on-exact
   div(v-on:click="foo" v-on:click.ctrl="foo")
 
+  //- vue/valid-v-bind
+  div(v-bind="")
+  div(:aaa="")
+  div(v-bind:aaa.bbb="foo")
+
+  //- vue/valid-v-cloak
+  div(v-cloak:aaa="")
+  div(v-cloak.bbb="")
+  div(v-cloak="ccc")
+
+  //- vue/valid-v-html
+  div(v-html="")
+  div(v-html:aaa="foo")
+  div(v-html.bbb="foo")
+
+  //- vue/valid-v-is
+  tr(v-is:a="foo")
+  tr(v-is.m="foo")
+  tr(v-is="")
+  tr(v-is="")
+  mycomponent(v-is="foo")
+
+  //- vue/valid-v-memo
+  div(v-memo="")
+  div(v-memo:aaa="[x]")
+  div(v-memo.bbb="[x]")
+  div(v-memo="{x}")
+  div(v-for="i in items"): div(v-memo="[i]")
+
+  //- vue/valid-v-memo
+  input(v-model="")
+  input(v-model:aaa="foo")
+  input(v-model.bbb="foo")
+  input(v-model="foo + bar")
+  input(v-model="a?.b.c")
+  input(v-model="(a?.b).c")
+  div(v-model="foo")
+  div(v-for="todo in todos"): input(v-model="todo")
+
+  //- vue/valid-v-on
+  div(v-on="")
+  div(v-on:click="")
+  div(v-on:click.aaa="foo")
+  div(@click="")
+
+  //- vue/valid-v-once
+  div(v-once:aaa="")
+  div(v-once.bbb="")
+  div(v-once="ccc")
+
+  //- vue/valid-v-pre
+  div(v-pre:aaa="")
+  div(v-pre.bbb="")
+  div(v-pre="ccc")
+
+  //- vue/valid-v-show
+  div(v-show="")
+  div(v-show:aaa="foo")
+  div(v-show.bbb="foo")
+  template(v-show="condition")
+
+  //- vue/valid-v-slot
+  div(v-slot="data") {{ data }}
+  div: template(v-slot:one) one
+
+  my-component(v-slot:one="data") {{ data }}
+  my-component(v-slot="data")
+    | {{data}}
+    template(v-slot:one) one
+
+  my-component(v-slot:one v-slot:two) one and two
+  my-component
+    template(v-slot:one) one 1
+    template(v-slot:one) one 2
+
+  my-component
+    template(v-slot:[data]="data") dynamic?
+  my-component(v-slot.mod="data") {{ data }}
+  my-component(v-slot) content
+
+  //- vue/valid-v-text
+  div(v-text="")
+  div(v-text:aaa="foo")
+  div(v-text.bbb="foo")
+
+  //- vue/attribute-hyphenation
+  MyComponent(myProp="prop")
+
+  //- vue/first-attribute-linebreak
+  MyComponent(lorem="1"
+    ipsum="2")
+
+  //- vue/html-indent
+  div(
+    id="a"
+      class="foo"
+  )
+
+  //- vue/html-quotes
+  img(src='./logo.png')
+
+  //- vue/max-attributes-per-line
+  mycomponent(
+    lorem="1" ipsum="2"
+    dolor="3"
+  )
+
+  //- vue/mustache-interpolation-spacing
+  div {{   text   }}
+  div {{ text }}
+
+  //- vue/no-multi-spaces
+  .foo(:style=   "bar")
+  i(:class="{\
+    'fa-angle-up'   : isExpanded,\
+    'fa-angle-down' : !isExpanded,\
+  }")
+
+  //- vue/no-spaces-around-equal-signs-in-attribute
+  div(class  =   "item")
+
+  //- vue/no-template-shadow
+  div
+    div(v-for="k in 5")
+      div(v-for="k in 10")
+      div(slot-scope="{ k }")
+    div(v-for="l in 5")
+
+
 </template>
 
 
