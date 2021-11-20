@@ -251,6 +251,44 @@
       div(slot-scope="{ k }")
     div(v-for="l in 5")
 
+  //- vue/v-bind-style
+  div(v-bind:foo="bar")
+
+  //- vue/v-bind-style
+  MyComponent(v-on:customEvent="handleEvent")
+  MyComponent(@customEvent="handleEvent")
+
+  //- vue/v-on-style
+  div(v-on:click="foo")
+
+  //- vue/v-slot-style
+  template(v-slot) content
+  template(v-slot:one) content
+  template(v-slot:two) content
+
+  //- vue/attributes-order
+  div(
+    ref="header"
+    v-for="item in items"
+    v-once
+    id="uniqueID"
+    v-model="headerData"
+    my-prop="prop"
+    v-if="!visible"
+    is="header"
+    @click="functionCall"
+    v-text="textContent"
+  )
+
+  //- vue/no-lone-template
+  template
+
+  //- vue/no-v-html
+  div(v-html="someHTML")
+
+
+  //- vue/this-in-template
+  a(:href="this.url") {{ this.text }}
 
 </template>
 
