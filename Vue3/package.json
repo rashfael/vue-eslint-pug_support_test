@@ -10,16 +10,16 @@
     "vue-class-component": "^8.0.0-0"
   },
   "devDependencies": {
-    "@typescript-eslint/eslint-plugin": "4.31.2",
-    "@typescript-eslint/parser": "4.31.2",
-    "@vue/cli-plugin-typescript": "4.5.13",
-    "@vue/cli-service": "4.5.13",
-    "@vue/compiler-sfc": "3.2.13",
-    "eslint": "6.8.0",
-    "eslint-plugin-vue": "7.18.0",
-    "eslint-plugin-vue-pug-sfc": "1.0.0-alpha.17",
+    "@typescript-eslint/eslint-plugin": "5.4.0",
+    "@typescript-eslint/parser": "5.4.0",
+    "@vue/cli-plugin-typescript": "4.5.15",
+    "@vue/cli-service": "4.5.15",
+    "@vue/compiler-sfc": "3.2.23",
+    "eslint": "8.3.0",
+    "eslint-plugin-vue": "8.1.1",
+    "eslint-plugin-vue-pug-sfc": "1.0.0-alpha.18",
     "pug": "3.0.2",
     "pug-plain-loader": "1.1.0",
-    "typescript": "4.1.6"
+    "typescript": "4.5.2"
   }
 }
