@@ -73,7 +73,6 @@
   //- vue/no-parsing-error
   | {{ . }}
   | {{ foo bar }}
-  div(:class="*abc*" / @click="def(")
 
   //- vue/no-template-key
   template(v-for="item in list", :key="item.id")  ...
