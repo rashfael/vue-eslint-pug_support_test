@@ -289,6 +289,76 @@
   //- vue/this-in-template
   a(:href="this.url") {{ this.text }}
 
+  //- vue/component-name-in-template-casing
+  cool-component
+  coolComponent
+  Cool-component
+
+  //- vue/custom-event-name-casing
+  //- ↓ It will break the linting
+  //- button(@click="$emit("myEvent")")
+
+  //- vue/html-button-has-type
+  button Hello World
+  button(type="")
+  button(type="foo")
+
+  //- vue/no-bare-strings-in-template
+  h1 Lorem ipsum
+  div(
+    title="Lorem ipsum"
+    aria-label="Lorem ipsum"
+    aria-placeholder="Lorem ipsum"
+    aria-roledescription="Lorem ipsum"
+    aria-valuetext="Lorem ipsum"
+  )
+  img(alt="Lorem ipsum")
+  input(placeholder="Lorem ipsum")
+  //- ↓ It will break the linting
+  //- h1(v-text=""Lorem ipsum"")
+
+  //- vue/no-child-content
+  div(v-html="replacesChildContent") child content
+
+  //- vue/no-duplicate-attr-inheritance
+  MyInput(v-bind="$attrs")
+
+  //- vue/no-multiple-objects-in-class
+  div(:class="[{'foo': isFoo}, {'bar': isBar}]")
+
+  //- vue/no-restricted-class
+  div(class="forbidden")
+  div.forbidden-two
+  .forbidden-three
+  div(:class="{ forbidden: booleanField1 }")
+  div(:class="`forbidden ${someString}`")
+  div(:class="'forbidden'")
+  div(:class="'forbidden ' + someString")
+  div(:class="[someString, 'forbidden']")
+
+  //- vue/no-restricted-custom-event
+  input(@input="$emit('input', $event.target.value)")
+
+  //- vue/no-restricted-static-attribute
+  div(foo="x")
+  div(bar)
+  div&attributes({
+    foo: x
+  })
+  div&attributes(attributes)(foo="bar")
+
+  //- vue/no-restricted-v-bind
+  div(v-bind:foo="x")
+  div(:bar="x")
+
+  //- vue/no-static-inline-styles
+  div(:style="{ transform: 'scale(0.5)' }")
+  div(:style="[ { transform: 'scale(0.5)' }, { 'user-select': 'none' } ]")
+  div(style="transform: scale(0.5);")
+
+  //- vue/no-template-target-blank
+  a(href="http://example.com" target="_blank")
+
 </template>
 
 

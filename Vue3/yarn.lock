@@ -2716,10 +2716,10 @@ escape-string-regexp@^4.0.0:
   resolved "https://registry.npmjs.org/escape-string-regexp/-/escape-string-regexp-4.0.0.tgz"
   integrity sha512-TtpcNJ3XAzx3Gq8sWRzJaVajRs0uVxA2YAkdb1jm2YkPz4G6egUFAyA3n5vtEIZefPk5Wa4UXbKuS5fKkJWdgA==
 
-eslint-plugin-vue-pug-sfc@1.0.0-alpha.19:
-  version "1.0.0-alpha.19"
-  resolved "https://registry.yarnpkg.com/eslint-plugin-vue-pug-sfc/-/eslint-plugin-vue-pug-sfc-1.0.0-alpha.19.tgz#a1749ec990f5d16dc1842c83ac7e5d54de72ead3"
-  integrity sha512-hopvNnIYnAAq+ZHpbUaWppPascPOoK9SDlPyIyt6+eIcBUzNGmimSWN4fyeX28lkWjm9rZxG/oJMunW509l4DQ==
+eslint-plugin-vue-pug-sfc@1.0.0-alpha.20:
+  version "1.0.0-alpha.20"
+  resolved "https://registry.yarnpkg.com/eslint-plugin-vue-pug-sfc/-/eslint-plugin-vue-pug-sfc-1.0.0-alpha.20.tgz#2bf0707322d69091464abe56f2e4bcd4b8a02628"
+  integrity sha512-xyFK3XLAVyTqKDT1BoQHdN+jvuRmyG5KKA5XNLa3iijE+VmB1Y2jJMlhTx+9U1AtFoFiovFGQy2M/oj6Vdx19w==
   dependencies:
     pug-lexer "^5.0.1"
     vue-eslint-parser "~8.0.1"
