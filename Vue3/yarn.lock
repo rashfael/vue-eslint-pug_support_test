@@ -2716,21 +2716,22 @@ escape-string-regexp@^4.0.0:
   resolved "https://registry.npmjs.org/escape-string-regexp/-/escape-string-regexp-4.0.0.tgz"
   integrity sha512-TtpcNJ3XAzx3Gq8sWRzJaVajRs0uVxA2YAkdb1jm2YkPz4G6egUFAyA3n5vtEIZefPk5Wa4UXbKuS5fKkJWdgA==
 
-eslint-plugin-vue-pug-sfc@1.0.0-alpha.20:
-  version "1.0.0-alpha.20"
-  resolved "https://registry.yarnpkg.com/eslint-plugin-vue-pug-sfc/-/eslint-plugin-vue-pug-sfc-1.0.0-alpha.20.tgz#2bf0707322d69091464abe56f2e4bcd4b8a02628"
-  integrity sha512-xyFK3XLAVyTqKDT1BoQHdN+jvuRmyG5KKA5XNLa3iijE+VmB1Y2jJMlhTx+9U1AtFoFiovFGQy2M/oj6Vdx19w==
+eslint-plugin-vue-pug@0.4.1:
+  version "0.4.1"
+  resolved "https://registry.yarnpkg.com/eslint-plugin-vue-pug/-/eslint-plugin-vue-pug-0.4.1.tgz#0322b4b3c2ca42d3440fa6dfeec205bcf99b983f"
+  integrity sha512-/FgEGQModEiPMdqgU306gXR2BqCOiaJsZ/4yf/1+j13dj9DftyW74rklbYWdmAnB+r8gJU93phMoq4AQF0KzYQ==
   dependencies:
-    pug-lexer "^5.0.1"
-    vue-eslint-parser "~8.0.1"
+    vue-eslint-parser-template-tokenizer-pug "^0.4.1"
 
-eslint-plugin-vue@8.1.1:
-  version "8.1.1"
-  resolved "https://registry.npmjs.org/eslint-plugin-vue/-/eslint-plugin-vue-8.1.1.tgz"
-  integrity sha512-rx64IrlhdfPya6u2V5ukOGiLCTgaCBdMSpczLVqyo8A0l+Vbo+lzvIfEUfAQ2auj+MF6y0TwxLorzdCIzHunnw==
+eslint-plugin-vue@8.7.1:
+  version "8.7.1"
+  resolved "https://registry.yarnpkg.com/eslint-plugin-vue/-/eslint-plugin-vue-8.7.1.tgz#f13c53547a0c9d64588a675cc5ecc6ccaf63703f"
+  integrity sha512-28sbtm4l4cOzoO1LtzQPxfxhQABararUb1JtqusQqObJpWX2e/gmVyeYVfepizPFne0Q5cILkYGiBoV36L12Wg==
   dependencies:
     eslint-utils "^3.0.0"
     natural-compare "^1.4.0"
+    nth-check "^2.0.1"
+    postcss-selector-parser "^6.0.9"
     semver "^7.3.5"
     vue-eslint-parser "^8.0.1"
 
@@ -5125,7 +5126,7 @@ nth-check@^1.0.2:
   dependencies:
     boolbase "~1.0.0"
 
-nth-check@^2.0.0:
+nth-check@^2.0.0, nth-check@^2.0.1:
   version "2.0.1"
   resolved "https://registry.npmjs.org/nth-check/-/nth-check-2.0.1.tgz"
   integrity sha512-it1vE95zF6dTT9lBsYbxvqh0Soy4SPowchj0UBGj/V6cTPnXXtQOPUbhZ6CmGzAD/rW22LQK6E96pcdJXk4A4w==
@@ -5883,6 +5884,14 @@ postcss-selector-parser@^6.0.0, postcss-selector-parser@^6.0.2:
   version "6.0.6"
   resolved "https://registry.npmjs.org/postcss-selector-parser/-/postcss-selector-parser-6.0.6.tgz"
   integrity sha512-9LXrvaaX3+mcv5xkg5kFwqSzSH1JIObIx51PrndZwlmznwXRfxMddDvo9gve3gVR8ZTKgoFDdWkbRFmEhT4PMg==
+  dependencies:
+    cssesc "^3.0.0"
+    util-deprecate "^1.0.2"
+
+postcss-selector-parser@^6.0.9:
+  version "6.0.10"
+  resolved "https://registry.yarnpkg.com/postcss-selector-parser/-/postcss-selector-parser-6.0.10.tgz#79b61e2c0d1bfc2602d549e11d0876256f8df88d"
+  integrity sha512-IQ7TZdoaqbT+LCpShg46jnZVlhWD2w6iQYAcYXfHARZ7X1t/UGhhceQDs5X0cGqKvYlHNOuv7Oa1xmb0oQuA3w==
   dependencies:
     cssesc "^3.0.0"
     util-deprecate "^1.0.2"
@@ -7624,7 +7633,14 @@ vue-class-component@^8.0.0-0:
   resolved "https://registry.npmjs.org/vue-class-component/-/vue-class-component-8.0.0-rc.1.tgz"
   integrity sha512-w1nMzsT/UdbDAXKqhwTmSoyuJzUXKrxLE77PCFVuC6syr8acdFDAq116xgvZh9UCuV0h+rlCtxXolr3Hi3HyPQ==
 
-vue-eslint-parser@^8.0.1, vue-eslint-parser@~8.0.1:
+vue-eslint-parser-template-tokenizer-pug@^0.4.1:
+  version "0.4.1"
+  resolved "https://registry.yarnpkg.com/vue-eslint-parser-template-tokenizer-pug/-/vue-eslint-parser-template-tokenizer-pug-0.4.1.tgz#b8a40dcd9a023ebe01cb4602383efd4440069475"
+  integrity sha512-LN/FrJA81NQ7OC7RYgwOD3+AJ+25VryvvSafkKAPLESnbc1LN7xClaJLSPdms0FpbaG74fCL+I6eQhHhh/p9yw==
+  dependencies:
+    pug-lexer "^5.0.1"
+
+vue-eslint-parser@^8.0.1:
   version "8.0.1"
   resolved "https://registry.npmjs.org/vue-eslint-parser/-/vue-eslint-parser-8.0.1.tgz"
   integrity sha512-lhWjDXJhe3UZw2uu3ztX51SJAPGPey1Tff2RK3TyZURwbuI4vximQLzz4nQfCv8CZq4xx7uIiogHMMoSJPr33A==

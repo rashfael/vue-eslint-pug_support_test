@@ -4,7 +4,10 @@ module.exports = {
 
   parserOptions: {
     sourceType: "module",
-    project: "tsconfig.json"
+    project: "tsconfig.json",
+    templateTokenizer: {
+      pug: "vue-eslint-parser-template-tokenizer-pug"
+    }
   },
 
   env: {
@@ -13,7 +16,7 @@ module.exports = {
 
   extends: [
     "plugin:vue/vue3-recommended",
-    "plugin:vue-pug-sfc/vue3-recommended"
+    "plugin:vue-pug/vue3-recommended"
   ],
 
   plugins: [
